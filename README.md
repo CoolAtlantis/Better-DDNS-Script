@@ -11,8 +11,9 @@ It should give output in your bash like this.
 
 text.lol => (Zone Id) aaa.text.lol => (Zone Id) bbb.text.lol => (Zone Id)
 
-Don't forget to make it executable by doing: chmod +x ddns.sh on your bash.
-
 TIP: Automate this script with cronjob so you don't have to manually run it everytime!
+
+Notice: This is made to work with Cloudflare API TOKKENs, not with Cloudflare Global API Key.
+All you need to do is make an Edit zone dns tokken, with the permission of `Zone.DNS`, also make sure you make it read/write instead of read only. 
 
 Any other questions? Add me on discord, "coolatlantis"!
