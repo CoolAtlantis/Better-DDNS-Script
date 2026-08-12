@@ -29,3 +29,17 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records/$DNS_RECORD
         }'
 
 echo "$IP" > "$LAST_IP_FILE"
+
+#Here we are only updating the content of the record, its easy to add more and then just make a variable.
+#For example you could add
+
+#DATE="$(date)"
+#And then update the http api request to ...    
+
+#-d '{
+#  "content": "'"$IP"'",
+#  "comment": "'"$DATE"'"
+#  }'
+
+#That would add as a record comment the current date and time of the script execution.
+#You can add a bunch of other stuff, please check "https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/update"
